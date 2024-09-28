@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "anymal"
+version = "0.0.1"
+description = "NN for clas-n images"
+authors = ["Daniil"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "2.4.0+cu118"
+torchvision = "0.19+cu118"
+pandas = "^2.2.3"
+numpy = "^2.1.1"
+matplotlib = "^3.9.2"
+tensorboard = "^2.18.0"
+notebook = "^7.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cu118"
+secondary = true
